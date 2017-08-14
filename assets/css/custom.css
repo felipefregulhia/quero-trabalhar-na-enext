@@ -313,6 +313,16 @@ footer .newsletter .btn-primary{
     padding: 0px;
     border: none !important;
   }
+  header .pesquisa-bloco{
+    display: none;
+  }
+  header .menu-topo{
+    display: none;
+    margin-top: 30px;
+  }
+  .dropdown-toggle::after{
+    display: none;
+  }
 }
 @media screen and (max-width: 720px) {
 

@@ -61,3 +61,20 @@ for (var i=0; i < produto.length; i++) {
     }
     el.className = elClass;
   }
+
+
+
+
+
+  jQuery('#navbarText').on('hidden.bs.collapse', function () {
+    jQuery('.pesquisa-bloco, .menu-topo').css('display','');
+    jQuery('.aditional-txt-topo, .logo-bloco, .caldeirao').show();
+    jQuery('#btn-menu-responsivo').attr('class','fa fa-bars');
+  })
+
+  jQuery('#navbarText').on('show.bs.collapse', function () {
+    jQuery('.pesquisa-bloco, .menu-topo').show();
+    jQuery('.aditional-txt-topo, .logo-bloco, .caldeirao').hide();
+    jQuery('#btn-menu-responsivo').attr('class','fa fa-close');
+
+  })
