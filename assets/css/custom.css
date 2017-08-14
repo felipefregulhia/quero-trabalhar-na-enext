@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Serif:400i|Oswald:200,400');
+
+/*
+font-family: 'Droid Serif', serif;
+font-family: 'Oswald', sans-serif;
+*/
+body{
+  font-family: 'Droid Serif', serif;
+}
+header{
+  margin-top: 25px !important;
+  margin-bottom: 30px !important;
+}
+
+/* Logo */
+header .logo{
+  color: #d7391e;
+  font-size: 37px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+}
+header .subtitulo-logo{
+  color: #684e7b;
+  margin-bottom: 30px !important;
+}
+header .subtitulo-logo:before, .subtitulo-logo:after{
+  content: "";
+  border-bottom: 2px solid #b9b9b9;
+  position: absolute;
+  width: 30px;
+  margin-top: 11px;
+  margin-left: -33px;
+}
+header .subtitulo-logo:after{
+  margin-left: 4px;
+}
+
+/* Busca Topo */
+header .pesquisa {
+  margin-top: 10px;
+}
+header .pesquisa input {
+  border-left: none;
+  border-color: #000;
+}
+header .pesquisa input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #b7b3b3;
+}
+header .pesquisa input::-moz-placeholder { /* Firefox 19+ */
+  color: #b7b3b3;
+}
+header .pesquisa input:-ms-input-placeholder { /* IE 10+ */
+  color: #b7b3b3;
+}
+header .pesquisa input:-moz-placeholder { /* Firefox 18- */
+  color: #b7b3b3;
+}
+
+header .pesquisa .input-group-addon {
+  background: none;
+  border-right: none;
+  border-color: #000;
+}
+header .pesquisa i{
+  color: #d73b20;
+}
+
+
+/*aditional-txt-topo*/
+header .aditional-txt-topo{
+  color: #d73a1e;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+/* Caldeirao */
+header .caldeirao{
+  font-family: sans-serif;
+  color: #b3b3c3;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 100;
+  margin-top: 14px;
+}
+header .caldeirao:before {
+  content: "";
+  background: url(../img/caldeirao.png) no-repeat;
+  position: absolute;
+  left: 33px;
+  width: 50px;
+  height: 50px;
+  top: -5px;
+}
+header .caldeirao .qtd{
+  color: #d73a1e;
+  font-weight: bold;
+}
+
+/* Menu Topo */
+header .menu-topo{
+  background-color: #523468;
+}
+header .menu-topo a{
+  color: #fff !important;
+  font-size: 15px;
+  margin: auto 12px;
+}
+header .menu-topo .extra{
+  background: #422a53;
+  border-radius: 5px;
+}
+header .navbar-toggler i{
+  color: #523468;
+  font-size: 30px;
+  margin-top: 10px;
+}
+header .navbar-toggler:focus {
+    box-shadow: 0 0 0 0 !important;
+    border: 0 none !important;
+    outline: 0 !important;
+}
+
+/* Main */
+main .produtos {
+  font-family: serif;
+  font-weight: bold;
+  color: #000;
+}
+main .produtos h5 {
+  font-size: 23px;
+  font-weight: bold;
+  padding-left: 30px;
+  margin: 40px 0px;
+}
+main .produtos img{
+  max-width: 200px;
+  width: 100%;
+}
+
+main .produto{
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+main .produto .preco{
+  color: #dc4041;
+}
+main .produto:hover{
+  opacity: 0.9;
+  background: #f8f8f8;
+  cursor: pointer;
+}
+
+
+/* Rodapé */
+footer{
+  background-color: #e6e6e6;
+  margin-top: 40px;
+  padding: 35px 0px;
+}
+
+
+footer .menu-rodape{
+  max-width: 450px;
+  line-height: 10px;
+  margin: 20px 0;
+}
+footer .menu-rodape ul{
+  padding-left: 0px;
+}
+footer .menu-rodape li{
+  color: #d73a1e;
+  font-family: sans-serif;
+  font-size: 19px;
+  float: left;
+}
+footer .menu-rodape li a{
+  color: #d73a1e;
+}
+
+footer .menu-social {
+  margin-bottom: 30px;
+}
+footer .menu-social ul{
+  padding-left: 0px;
+}
+footer .menu-social li{
+  float: left;
+}
+footer .menu-social i {
+  color: #fff;
+  background: #523269;
+  border-radius: 20px;
+  font-size: 23px;
+  width: 34px;
+  text-align: center;
+  height: 33px;
+  padding-top: 7px;
+  margin-right: 15px;
+}
+
+footer .copyright{
+  margin-left: 30px;
+  color: #6a6666;
+  font-family: sans-serif;
+}
+
+
+footer .newsletter {
+  padding: 30px;
+}
+footer .newsletter .btn-primary{
+  background-color: #d73a1e;
+  border-color: #d73a1e;
+  text-transform: uppercase;
+  padding-left: 27px;
+  padding-right: 27px;
+  font-family: sans-serif;
+}
+
+
+/* Modal Produto */
+.modalProduto {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  background: rgba(0,0,0,0.8);
+  left: 0;
+  top: 0;
+
+}
+.modalProdutoIn {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10%;
+  left: 10%;
+  top:20%;
+  position: fixed;
+  z-index: 9999;
+  background: #fff;
+  padding: 0px 5px;
+  padding-bottom: 30px;
+  overflow-x: auto;
+}
+.fechaModalProduto{
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modalProduto{
+  font-family: sans-serif;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.modalProduto.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modalProduto #pocaoNome, .modalProduto .titulo, .modalProduto #pocaoPreco{
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 60px;
+}
+.modalProduto #pocaoPreco{
+  color: #d73a28;
+  line-height: 0px;
+  margin-bottom: 40px;
+}
+.modalProduto .btn-primary{
+  background-color: #d73a1e;
+  border-color: #d73a1e;
+  text-transform: uppercase;
+  padding-left: 27px;
+  padding-right: 27px;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 991px) {
+  header .logo{
+    font-size: 30px;
+  }
+  header .aditional-txt-topo{
+    color: #757575;
+    background-color: #ececec;
+    text-align: center;
+    widows: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  header .caldeirao {
+    font-family: sans-serif;
+    color: #b3b3c3;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 50px;
+    padding: 0px;
+    text-align: center !important;
+  }
+  header .caldeirao:before {
+    content: "";
+    background: url(../img/caldeirao.png) no-repeat;
+    position: absolute;
+    left: 24px;
+    width: 32px;
+    height: 50px;
+    top: -44px;
+  }
+  header .menu-topo{
+    padding: 0px;
+    border: none !important;
+  }
+}
+@media screen and (max-width: 720px) {
+
+  footer .menu-social {
+    margin-top: 30px;
+  }
+  footer .menu-social i {
+    margin-right: 10px;
+  }
+  footer .newsletter .btn-primary{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: -8px !important;
+  }
+  .modalProdutoIn {
+    width: 90%;
+    left: 5%;
+    top:5%;
+  }
+}
+@media screen and (max-width: 540px) {
+  header .caldeirao:before {
+    content: "";
+    background: url(../img/caldeirao.png) no-repeat;
+    position: absolute;
+    left: 24px;
+    width: 32px;
+    height: 50px;
+    top: -44px;
+  }
+  .modalProdutoIn img{
+    width: 50%;
+    text-align: center;
+  }
+  .modalProduto #pocaoNome, .modalProduto .titulo, .modalProduto #pocaoPreco{
+    line-height: 30px;
+  }
+}
